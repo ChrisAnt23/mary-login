@@ -1,0 +1,70 @@
+<html>
+<head>
+<title>Login</title>
+
+<center><table  ><td width="1000" height="300"></center>
+<img src="56.png" width="1000" height="130">
+<h1><font face="tahoma" size="4" color="#6565D9"><center> Colegio De Estudios Cientificos y Tecnologicos Del Estado De Mexico Plantel Ixtlahuaca
+Elaborado por:Marisol Gomez Rodriguez Grupo 404.Numero de lista:8
+Fecha de elaboracion:29 abril de 2024.Hora: 1:09 p.m.</font></center></h1>
+<center><img src="banner.gif" width ="1000"></center>
+
+<center>
+                        <body>
+                            
+                            <form id="loginForm">
+                                <label for="username" onfocus="this.value=''"><font color="blue">Usuario:</label><br></font>
+                                <input type="text" id="username" name="username"><br>
+                                <label for="password" onfocus="this.value=''"><font color="blue">Contraseña:</label><br></font>
+                                <input type="password" id="password" name="password"><br><br>
+                                <button type="submit">Iniciar Sesión</button>
+					   <input type="reset" value="Limpiar" onclick="username ,password"()"></br></center>
+
+                            </form>
+                        
+                            <script>
+                                // Datos de usuario
+                                const usuarioCorrecto = "Marisol";
+                                const contraseñaCorrecta = "123";
+                        
+                                // Función para verificar el inicio de sesión
+                                function verificarInicioSesion(event) {
+                                    event.preventDefault(); // Evita que el formulario se envíe
+                        
+                                    // Obtener los valores de usuario y contraseña
+                                    const usuario = document.getElementById("username").value;
+                                    const contraseña = document.getElementById("password").value;
+                        
+                                    // Verificar la autenticación
+                                    if (usuario === usuarioCorrecto && contraseña === contraseñaCorrecta) {
+                                        alert("Felicidades has iniciado seción");
+                                        // Redirigir al usuario a otra página
+                                        window.location.href = "QUE ES CECYTEM.html"; // Cambia "pagina_de_bienvenida.html" por la URL de la página a la que deseas redirigir al usuario
+						window.location.href="MISION.html";
+                                    } else {
+                                        alert("Usuario o contraseña incorrectos.Intentelo nuevamente.");
+                                    }
+                                }
+                        
+                                // Agregar el evento de escucha para el envío del formulario
+                                document.getElementById("loginForm").addEventListener("submit", verificarInicioSesion);
+
+
+                            </script>
+                        </body></center>
+
+
+                        <Center><a href="https://chrisant23.github.io/mary-menu/"><img src="50.PNG" width="130"  height ="30"></center></a href>
+
+<br><center><img src="grecas.png" width ="1000"></br></center>
+ <br> <b><font size="3"><font face="tahoma "><center>Plantel Ixtlahuaca Camino a Santa Ana Ixtlahuaca 
+S/N Ixtlahuaca,México,C.P.50760.num 712 283 0984</center></b>
+
+
+
+</table>
+
+
+
+
+
